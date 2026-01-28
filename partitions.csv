@@ -1,0 +1,7 @@
+# Name,     Type,   SubType,    Offset,     Size,       Flags
+# ESP32-S3 16MB Flash - No OTA
+# 16MB (0x1000000) - bootloader/partition (0x10000) = 0xFF0000 available
+nvs,        data,   nvs,        0x9000,     24K,
+phy_init,   data,   phy,        0xF000,     4K,
+factory,    app,    factory,    0x10000,    0xCF0000,
+storage,    data,   spiffs,     ,           0x300000,
